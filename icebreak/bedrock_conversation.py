@@ -1,8 +1,9 @@
 import boto3
 import json
 import os
+from dotenv import load_dotenv
 
-os.environ['AWS_BEARER_TOKEN_BEDROCK'] = "bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29tLz9BY3Rpb249Q2FsbFdpdGhCZWFyZXJUb2tlbiZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFTSUFaSTJMREtPSTNRQzc3SVE2JTJGMjAyNTA5MDUlMkZ1cy1lYXN0LTElMkZiZWRyb2NrJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA5MDVUMTMxMDUwWiZYLUFtei1FeHBpcmVzPTQzMjAwJlgtQW16LVNlY3VyaXR5LVRva2VuPUlRb0piM0pwWjJsdVgyVmpFQTRhQ1hWekxXVmhjM1F0TVNKR01FUUNJRUFvbklLU0l1SSUyRmRKMlduRDRDUjJTSWxzVmN0WlNSRTVOZ3VWd2UwS0lmQWlBR3BSS2NodnBJSDYzMm1OV0YxckdoR2NVb0tpOWdQN1pFYWNBJTJCUjhOeW1pckdBd2gyRUFBYUREWXpOelF5TXpJM05qazBOU0lNczNTdGs2Uk5SWmkzZTVrMktxTURaaGNkUzJ6NndPR0hDZktiUXV3bCUyQmhtRzZGWGhwejNxT25mV2tlVSUyRiUyRmpKWWtoNGY3a1ZSeVRNR1pTWHlHZktHcVFOblFKd0RYc0lobUxtcjhoODd5bXQlMkZEWjBYUW5qNmEyTEVzOWJZS1gzSlRsR0hBR0pWTXBDT1hqRjdXTjlGb3A0U2YlMkJSRUI2c3A4RTVVcU9zVSUyQlpFWXI2bnJVbGxCcEZwckZVdGQlMkZzYUZpWW80cTZpTUhreWZIUm0xeWltektuYTI4V0NEOHVPQk1oZG5oU25OWERBc0IlMkZHS3RCUzBVQkxXZ3Jnb2tzWmJaS3pRczlNNEU1VjFnUFNsWTJpWXdaMUxCY0dGT0pmUnNSVVhObm9mSU92MyUyRllTWXJXNG1BbjVNN2loc3dFakN0cXNMNGxxSk5WWjh4ZSUyQnJiOGZoU0hMNnV0eVd1WFZheWlUQ3JldTNOb0JsakJwOGlDMFBkTEVBekVZUXlINEJFU1RTVFAyZUxvRmJ3OGYzSGpRcEp3bHdSTjI5NVpzaEttZmlPd3pSU3lQNnhXalp5Z0NoVnpLYVM1VXpyY0V2MzJWa093RVNDUkdla3h2SGx0Z08yajVoJTJGJTJGb1dHdlJZRXhpZ1FmcnlGejQlMkZWQjkwSk5XRUJOViUyRkpJU3JKRE03UDUyYXFGUyUyRjdlNVQlMkJKaWFZT1ZyQ1lzMEg1NHFvREI3cTdRQWlxVTRJS2huWDBCeVV6ZVprTFdKVU5wd2dranNyanN3bHZEcXhRWTYzd0p5ZUxZR21DYSUyRjhTcFphT25JTlJkUXY1VHIzWEZxdFBOcWdMeTM5OFBWM0VtWm5pWkJkWVNiVGlJdUd3WFhrTjJLUlpFaW1sSFliblglMkI3cVVnZldSNmkwSlNoWkhyWnZtN3EyeXZsVGF0WFBnVFYlMkZMd2ZJUG1RZlNzSlFMTm81NSUyQlFWd1VkRVJvcyUyQll1MHBDQUhzYW1heTYzUjZuU2l6emVWTnpqOVElMkZGdHZZV2xSWld0RzBGTUZ1VUprMWp6bkklMkZIZzBoYnZJZ2JOaXV5WDU4ZkFsNXA3QzVIR05CVkN1aTNsQ2lQZlp1NVBrSThacWhxdXRsdUVXZkY5JTJCdXM3MERaSDJLJTJCNTlSJTJGdmZKTnFmJTJGSVN1QUVJazd1eWM4T2Rxb2dqV3BGdk9JUXRjS0VIWWI4bEVqQSUyRjNSU3klMkZ6Tktia3F4QmFvNXIlMkIxWU5VNkZ3ejZQS3o0dGV5NVBtc0V5VURBbXB5dkt2eGZIRE90bTRHaDZuJTJGcmdZd211UFk0RGUwVVl0RWRETE9EdXIzWHRBQ1Ribml4czFkRkxnSWdhOTVVVUFQbEJEZlBkQkFEZ1BRdm1SNnAydVUxNWU5JTJGNlM4SzVuQmZaNVQ4RzJjQkFWZFYyQSUzRCZYLUFtei1TaWduYXR1cmU9NTBmYmQ1ZDk5Zjk3ZTUwMWMyNzljMGM5OWMxMjZmNWJkNjdjOWY0OTNjMjI1ODllZGYwNTMwNTU2YTBiODRlYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmVmVyc2lvbj0x"
+load_dotenv()
 
 def get_conversation_recommendations(prompt):
     """AWS Bedrock을 사용해 대화 추천 목록을 받아오는 함수"""
@@ -35,14 +36,18 @@ def get_conversation_recommendations(prompt):
         return "[시뮬레이션] 보안 컨설턴트를 위한 대화 주제:\n1. 최근 공급망 공격 사례에 대한 의견\n2. 네트워크 보안 동향과 전망\n3. 취약점 분석 방법론\n4. 크로스핏 운동의 장점\n5. 캠핑 장비와 추천 장소"
 # 사용 예시
 if __name__ == "__main__":
-    prompt = {
-        "직군/전공": "보안 컨설턴트",
-        "관심 분야": "네트워크 보안과 취약점 분석",
-        "취미 활동": "크로스핏과 캠핑"
-    }
+    # prompt.json에서 예시 프롬프트들 읽기
+    with open('prompt.json', 'r', encoding='utf-8') as f:
+        prompts = json.load(f)
     
-    recommendations = get_conversation_recommendations(json.dumps(prompt, ensure_ascii=False))
-    
-    if recommendations:
-        print("추천 대화 목록:")
-        print(recommendations)
+    # 각 프롬프트에 대해 요청 보내기
+    for i, prompt in enumerate(prompts, 1):
+        print(f"\n=== 예시 {i} ===")
+        print(f"입력: {json.dumps(prompt, ensure_ascii=False)}")
+        
+        recommendations = get_conversation_recommendations(json.dumps(prompt, ensure_ascii=False))
+        
+        if recommendations:
+            print("추천 대화 목록:")
+            print(recommendations)
+        print("-" * 50)

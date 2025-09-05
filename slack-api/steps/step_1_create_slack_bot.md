@@ -42,10 +42,10 @@
 - 코드에 직접 하드코딩하지 말고 환경변수 사용 예정
 
 ## 5. 완료 확인사항
-- [ ] Slack App 생성 완료
-- [ ] Bot Token Scopes 권한 설정 완료
-- [ ] Bot User OAuth Token 발급 완료
-- [ ] 토큰을 안전한 곳에 저장 완료
+- [x] Slack App 생성 완료
+- [x] Bot Token Scopes 권한 설정 완료
+- [x] Bot User OAuth Token 발급 완료
+- [x] 토큰을 안전한 곳에 저장 완료
 
 ## 다음 단계
 Step 2: 개발 환경 설정으로 진행

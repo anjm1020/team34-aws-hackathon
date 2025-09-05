@@ -1,9 +1,9 @@
 # Slack Bot 구현 TODO
 
 ## 1. Slack App 설정
-- [ ] Slack 워크스페이스에서 새 앱 생성
-- [ ] Bot Token Scopes 권한 설정 (`chat:write`, `channels:read`, `users:read`)
-- [ ] Bot User OAuth Token 발급 받기
+- [x] Slack 워크스페이스에서 새 앱 생성
+- [x] Bot Token Scopes 권한 설정 (`chat:write`, `channels:read`, `users:read`)
+- [x] Bot User OAuth Token 발급 받기
 
 ## 2. 개발 환경 설정
 - [ ] 프로젝트 디렉토리 구조 생성

@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get_conversation_recommendations(prompt):
+def get_conversation_recommendations(prompt, sns_info=None):
     """AWS Bedrock을 사용해 대화 추천 목록을 받아오는 함수"""
     
     # AWS 자격 증명 설정 (테스트용)
@@ -22,9 +22,9 @@ def get_conversation_recommendations(prompt):
             promptVariables={
                 "survey": {
                     "text": prompt
-                }
+                },
                 "sns": {
-                    
+                    "text": json.dumps(sns_info, ensure_ascii=False) if sns_info is not None else ""
                 }
             }
         )
@@ -44,6 +44,9 @@ def get_conversation_recommendations(prompt):
                     promptVariables={
                         "survey": {
                             "text": prompt
+                        },
+                        "sns": {
+                            "text": json.dumps(sns_info, ensure_ascii=False) if sns_info is not None else ""
                         }
                     }
                 )
@@ -57,16 +60,21 @@ def get_conversation_recommendations(prompt):
             
 # 사용 예시
 if __name__ == "__main__":
-    # prompt.json에서 예시 프롬프트들 읽기
+    # prompt.json과 sns_info.json 읽기
     with open('prompt.json', 'r', encoding='utf-8') as f:
         prompts = json.load(f)
     
+    with open('sns_info.json', 'r', encoding='utf-8') as f:
+        sns_infos = json.load(f)
+    
     # 각 프롬프트에 대해 요청 보내기
-    for i, prompt in enumerate(prompts, 1):
+    for i, (prompt, sns_info) in enumerate(zip(prompts, sns_infos), 1):
         print(f"\n=== 예시 {i} ===")
         print(f"입력: {json.dumps(prompt, ensure_ascii=False)}")
+        if sns_info:
+            print(f"SNS: {json.dumps(sns_info, ensure_ascii=False)}")
         
-        recommendations = get_conversation_recommendations(json.dumps(prompt, ensure_ascii=False))
+        recommendations = get_conversation_recommendations(json.dumps(prompt, ensure_ascii=False), sns_info)
         
         if recommendations:
             print("추천 대화 목록:")

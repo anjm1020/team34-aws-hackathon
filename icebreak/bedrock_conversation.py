@@ -1,6 +1,7 @@
 import boto3
 import json
 import os
+import time
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -14,7 +15,6 @@ def get_conversation_recommendations(prompt):
         region_name='us-east-1'
     )
     
-    
     try:
         # Bedrock API 호출
         response = bedrock_runtime.converse(
@@ -22,6 +22,9 @@ def get_conversation_recommendations(prompt):
             promptVariables={
                 "survey": {
                     "text": prompt
+                }
+                "sns": {
+                    
                 }
             }
         )
@@ -32,8 +35,26 @@ def get_conversation_recommendations(prompt):
         return conversation_list
         
     except Exception as e:
-        print(f"오류 발생: {e}")
-        return "[시뮬레이션] 보안 컨설턴트를 위한 대화 주제:\n1. 최근 공급망 공격 사례에 대한 의견\n2. 네트워크 보안 동향과 전망\n3. 취약점 분석 방법론\n4. 크로스핏 운동의 장점\n5. 캠핑 장비와 추천 장소"
+        if "ThrottlingException" in str(e) or "Too many requests" in str(e):
+            print(f"요청 제한 발생. 5초 대기 후 재시도...")
+            time.sleep(5)
+            try:
+                response = bedrock_runtime.converse(
+                    modelId="arn:aws:bedrock:us-east-1:637423276945:prompt/XWDHEIPEV7",
+                    promptVariables={
+                        "survey": {
+                            "text": prompt
+                        }
+                    }
+                )
+                return response['output']['message']['content'][0]['text']
+            except Exception as retry_e:
+                print(f"재시도 실패: {retry_e}")
+                return "[시뮬레이션] 대화 주제 생성 실패"
+        else:
+            print(f"오류 발생: {e}")
+            return "[시뮬레이션] 대화 주제 생성 실패"
+            
 # 사용 예시
 if __name__ == "__main__":
     # prompt.json에서 예시 프롬프트들 읽기
@@ -51,3 +72,7 @@ if __name__ == "__main__":
             print("추천 대화 목록:")
             print(recommendations)
         print("-" * 50)
+        
+        # 요청 간 대기 시간
+        if i < len(prompts):
+            time.sleep(2)

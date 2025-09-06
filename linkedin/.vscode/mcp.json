@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "linkedin-scraper": {
+      "command": "node",
+      "args": ["dist/src/index.js", "--stdio"],
+      "cwd": "/Users/wa/golbob/aws/linkedin/linkedin-scraper-mcp"
+    }
+  }
+}

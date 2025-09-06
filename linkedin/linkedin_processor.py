@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import pandas as pd
 import json
 import os
 import sys
@@ -9,43 +8,13 @@ from pathlib import Path
 
 sys.path.append('linkedin-scraper-mcp')
 from postgres_config import PostgreSQLClient
-
-def excel_to_json(excel_file_path, output_dir="converted_json"):
-    """엑셀 파일을 JSON으로 변환"""
-    Path(output_dir).mkdir(exist_ok=True)
-    
-    df = pd.read_excel(excel_file_path)
-    headers = df.iloc[0].tolist()
-    data_rows = df.iloc[1:]
-    
-    json_data = []
-    for _, row in data_rows.iterrows():
-        record = {
-            "linkedin_url": str(row.iloc[0]).strip() if pd.notna(row.iloc[0]) else "",
-            "job_field": str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else "",
-            "interests": str(row.iloc[2]).strip() if pd.notna(row.iloc[2]) else "",
-            "hobbies": str(row.iloc[3]).strip() if pd.notna(row.iloc[3]) else "",
-            "user_id": str(row.iloc[4]).strip() if pd.notna(row.iloc[4]) else "",
-            "timestamp": str(row.iloc[5]).strip() if pd.notna(row.iloc[5]) else ""
-        }
-        
-        if any(record.values()):
-            json_data.append(record)
-    
-    base_name = Path(excel_file_path).stem
-    json_file_path = f"{output_dir}/{base_name}.json"
-    
-    with open(json_file_path, 'w', encoding='utf-8') as f:
-        json.dump(json_data, f, ensure_ascii=False, indent=2)
-    
-    print(f"✅ 엑셀 변환 완료: {json_file_path} ({len(json_data)}개 레코드)")
-    return json_file_path
+from excel_to_json import excel_to_json
 
 def is_valid_linkedin_url(url):
     """유효한 LinkedIn URL인지 확인"""
     if not url or url.strip() == "":
         return False
-    return "linkedin.com/in/" in url and "feed" not in url
+    return "linkedin.com/in/" in url and "feed" not in ur
 
 def normalize_url(url):
     """URL 정규화"""
@@ -89,7 +58,7 @@ def find_linkedin_data(url, scraped_dir):
             continue
     return None
 
-def create_member_json(member_data, user_id, linkedin_data=None):
+def create_member_json(member_data, linkedin_data=None):
     """멤버 JSON 생성"""
     if linkedin_data is None:
         linkedin_data = {
@@ -106,8 +75,7 @@ def create_member_json(member_data, user_id, linkedin_data=None):
         }
     
     return {
-        "user_id": user_id,
-        "original_slack_id": member_data.get("user_id", ""),
+        "user_id": member_data.get("user_id", ""),  # Slack ID 사용
         "survey_data": {
             "linkedin_url": member_data.get("linkedin_url", ""),
             "job_field": member_data.get("job_field", ""),
@@ -128,7 +96,9 @@ def upload_to_db(json_file_path):
         return False
     
     try:
-        result = db_client.insert_profile_with_user_id(member_data)
+        # Slack ID를 기본키로 사용
+        slack_id = member_data.get("user_id", "")
+        result = db_client.insert_profile_with_slack_id(slack_id, member_data)
         return result is not None
     except Exception as e:
         print(f"❌ DB 업로드 실패: {e}")
@@ -176,10 +146,11 @@ def process_all(excel_file, upload_db=False):
             print("📝 LinkedIn URL 없음 - 설문 데이터만 저장")
         
         # 멤버 JSON 생성
-        member_json = create_member_json(member, user_id, linkedin_data)
+        member_json = create_member_json(member, linkedin_data)
         
-        # result 폴더에 저장
-        result_file = f"result/{user_id}.json"
+        # result 폴더에 저장 (Slack ID 사용)
+        slack_id = member.get("user_id", f"user_{user_id}")
+        result_file = f"result/{slack_id}.json"
         with open(result_file, 'w', encoding='utf-8') as f:
             json.dump(member_json, f, ensure_ascii=False, indent=2)
         

@@ -1,0 +1,55 @@
+{
+  "user_id": 26,
+  "original_slack_id": "U09DF3E0CLS",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/byungho-choi-4a43632a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "job_field": "IT",
+    "interests": "IT",
+    "hobbies": "",
+    "timestamp": "2025년 9월 6일 오전 12:39:14"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/byungho-choi-4a43632a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "name": "Byungho choi",
+    "headline": "Software Engineer at Nexon Korea",
+    "location": "NEXON KOREA",
+    "about": "https://upcurvewave.tistory.com\nhttps://github.com/renechoi\n\nI believe the world ultimately belongs to the 'makers.' My journey as a developer began with a pure curiosity for problem-solving. From sleepless nights tackling concurrency in distributed systems to the moment I see users react to and enjoy a service I've built, I feel most alive in the process of creating.\n\n\"I have no intention of growing ordinarily.\" Having started my career later, I've used it as fuel to grow faster and dive deeper. I constantly challenge myself to be better than I was yesterday—by exploring the essence of technology (authoring 30+ tech articles), diving deep into fundamentals (solving 600+ algorithm problems & reading 50+ tech books), building a culture of shared growth (leading study groups), and actively leveraging new tools like AI.\n\nIn this journey, I've embraced AI not just as a productivity tool, but as a collaborative partner. It allows me to automate the 'how' and focus on the more critical questions of 'what' to build and 'why' it matters. This partnership empowers me to tackle larger challenges and bring ideas to life at a speed I once thought impossible.\n\nCode and technology are tools for solving human problems. While I pursue technical depth, I aspire to be an engineer who always considers the user experience and business value that my work creates.",
+    "experiences": [],
+    "education": [
+      {
+        "school": "Ajou University(아주대학교)",
+        "degree": "English Literature Bachelor's degree",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "한국방송통신대학교",
+        "degree": "Computer Science Bachelor's degree",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "Ajou University(아주대학교)",
+        "degree": "English Literature Bachelor's degree",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "한국방송통신대학교",
+        "degree": "Computer Science Bachelor's degree",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "AWS DynamoDB",
+      "AWS Aurora"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

@@ -1,8 +1,8 @@
 import json
-import os
-import sys
 import subprocess
+import sys
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 # .env 파일 로드
@@ -10,6 +10,7 @@ load_dotenv()
 
 sys.path.append('linkedin-scraper-mcp')
 from postgres_config import PostgreSQLClient
+
 
 def is_valid_linkedin_url(url):
     """유효한 LinkedIn URL인지 확인"""
@@ -27,9 +28,9 @@ def scrape_linkedin(url):
             capture_output=True,
             text=True,
             timeout=120,
-            cwd="/Users/wa/golbob/aws/linkedin/linkedin-scraper-mcp"
+            cwd="/Users/jaemin/Desktop/q-hackerton/team34-aws-hackathon/linkedin/linkedin-scraper-mcp",
         )
-        
+
         if result.returncode == 0:
             print(f"✅ LinkedIn 스크래핑 성공: {url}")
             return True
@@ -94,15 +95,15 @@ def upload_to_db(json_file_path):
     """DB에 업로드 (ice_breaking 포함)"""
     with open(json_file_path, 'r', encoding='utf-8') as f:
         member_data = json.load(f)
-    
+
     # ice_breaking 데이터가 있으면 포함
     if "ice_breaking" in member_data:
-        print(f"🧊 ice_breaking 데이터 포함하여 업로드")
-    
+        print("🧊 ice_breaking 데이터 포함하여 업로드")
+
     db_client = PostgreSQLClient()
     if not db_client.connect():
         return False
-    
+
     try:
         slack_id = member_data.get("original_slack_id", "")
         result = db_client.insert_profile_with_slack_id(slack_id, member_data)

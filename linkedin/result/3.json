@@ -1,0 +1,23 @@
+{
+  "user_id": 3,
+  "original_slack_id": "U09CVH4BCG2",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/jinsungh/",
+    "job_field": "IT 기업",
+    "interests": "Cloud",
+    "hobbies": "독서",
+    "timestamp": "2025년 9월 5일 오후 2:31:18"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "user_id": 4,
+  "original_slack_id": "U09E7TYA62U",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "IT",
+    "interests": "MSK",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 2:32:58"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

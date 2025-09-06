@@ -1,0 +1,55 @@
+{
+  "user_id": 10,
+  "original_slack_id": "U09DFFGF48J",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/eunji-jung-173288296/",
+    "job_field": "컴퓨터공학과",
+    "interests": "DevOps, MLOps, SRE",
+    "hobbies": "인디 게임 스토리 요약 영상 유튜브 시청",
+    "timestamp": "2025년 9월 5일 오후 2:54:25"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/eunji-jung-173288296",
+    "name": "Eunji Jung",
+    "headline": "Dongguk University CS Student | AWS Cloud Club Captain | GDG Campus Korea Organizer",
+    "location": "동국대학교",
+    "about": "지난 2025년 8월 2일 토요일, 구글 스타트업 캠퍼스에서\n⭐ CODE:ME - 개발자 퍼스널 브랜딩 with AI ⭐ 행사가 성황리에 진행되었습니다!\n\n개발자로서의 '나'를 돌아보고, AI와 함께 커리어 로드맵을 설계하는 단 하루.\n참여자분들과 자신의 경험을 정리하고, 스토리로 풀어내며,\n실천 가능한 3가지 Action Item까지 완성하는 실전 워크숍을 함께했습니다.\n\n✋ 연사 세션 – 커뮤니티와 커리어 확장에 대한 인사이트\n💬 토크콘서트 – 다양한 개발자의 성장 여정과 고민 공유\n🤝 네트워킹 – SharE:v를 활용한 디지털 명함과 진솔한 대화\n📝 핸즈온 세션 – 경험 정리 → 스토리화 → AI 검토 → Action Item 도출\n💡 피드백 라운드 – 서로의 계획을 읽고 건네는 성장 피드백\n\n각자의 경험을 꺼내고, 서로의 이야기에 공감하며,\n'개인의 성장'을 '공유된 성장'으로 확장시킨 값진 시간이었습니다.\n\n함께해주신 모든 분들께 진심으로 감사드리며,\nGDG Campus Korea는 앞으로도 여러분의 성장을 응원하는 자리를 계속 만들어가겠습니다.\n\nCODE:ME에서 사용된 퍼스널 브랜딩 모델이 궁금하다면?\n👉\n\n📌 다음 행사에서 또 만나요!",
+    "experiences": [],
+    "education": [
+      {
+        "school": "동국대학교",
+        "degree": "컴퓨터공학 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "동국대학교",
+        "degree": "조소 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "동국대학교",
+        "degree": "컴퓨터공학 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "동국대학교",
+        "degree": "조소 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "아마존 웹 서비스(AWS)",
+      "MSA"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

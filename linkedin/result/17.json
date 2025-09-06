@@ -1,0 +1,41 @@
+{
+  "user_id": 17,
+  "original_slack_id": "U09D6AWCC21",
+  "survey_data": {
+    "linkedin_url": "www.linkedin.com/in/leedohyeong",
+    "job_field": "R2C Company, 컴퓨터공학과",
+    "interests": "AWS, Linux, Cloud",
+    "hobbies": "AWS, Linux, Cloud",
+    "timestamp": "2025년 9월 5일 오후 4:22:32"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/leedohyeong",
+    "name": "Dohyeong Lee",
+    "headline": "R2C Company Software Engineer | AWS Cloud Clubs Captain | Codeit Education Mentor",
+    "location": "코드잇",
+    "about": "R2C Company Software Engineer | AWS Cloud Clubs Founder & Captain | Codeit Education Mentor\n\nCodeit (Series-B EdTech Startup) | 9th FullStack Sprint Mentor | 2025. 08 ~ Present\nR2C Company (Pre-Series-A Startup) | Software Engineer | 2024. 07 ~ Present\n2025 OSSCA ArgoProj Mentee (2025. 07 ~ 2025. 12)\nAWS Cloud Clubs - Dongguk University 1st Founder & Captain (2025. 05 ~ 2026. 03)\nGoogle Developer Groups on Campus (GDGoC) - Dongguk University 2st Organizer (2024. 08 ~ 2025. 08)\nGoogle Developer Student Clubs (GDSC) - Dongguk University 1st Web/App Member (2023. 09 ~ 2024. 08)\n\nA growth-minded software engineer who transitioned from liberal arts to computer science, consistently ranking top 4% of the class.\nExperienced in full-stack development and building scalable, reliable cloud infrastructure.\nCurrently leading development at a Pre-Series A startup, serving as the founder of the AWS Cloud Club and former leader of Google-sponsored GDGoC (formerly GDSC).\nI take full ownership of products, prioritize team alignment, and create real business impact through data-driven development and clear communication across domains.",
+    "experiences": [],
+    "education": [
+      {
+        "school": "동국대학교",
+        "degree": "Computer Science Engineering",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "동국대학교",
+        "degree": "Computer Science Engineering",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "GCP",
+      "아마존 웹 서비스(AWS)"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

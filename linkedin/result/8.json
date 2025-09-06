@@ -1,0 +1,41 @@
+{
+  "user_id": 8,
+  "original_slack_id": "U09DVTKD7RP",
+  "survey_data": {
+    "linkedin_url": "www.linkedin.com/in/suinbundang",
+    "job_field": "백엔드 개발자",
+    "interests": "Cloud",
+    "hobbies": "스노우보드, 바이크 라이딩",
+    "timestamp": "2025년 9월 5일 오후 2:43:25"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/suinbundang",
+    "name": "박수인 (Su-In Park)",
+    "headline": "Backend Engineer",
+    "location": "샐러드랩",
+    "about": "문제를 발견하고 이를 소프트웨어로 해결하는 것을 좋아합니다\n'다정한 사람이 강하다'라는 말을 좋아합니다",
+    "experiences": [],
+    "education": [
+      {
+        "school": "Ajou University(아주대학교)",
+        "degree": "사이버보안학과 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "Ajou University(아주대학교)",
+        "degree": "사이버보안학과 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "pandas",
+      "아마존 웹 서비스(AWS)"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

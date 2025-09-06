@@ -1,0 +1,23 @@
+{
+  "user_id": 9,
+  "original_slack_id": "U09DEQFFS2E",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "백엔드 개발자",
+    "interests": "AI",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 2:47:12"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "user_id": 18,
+  "original_slack_id": "U09D73YQ1B7",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "AI/빅데이터학과",
+    "interests": "AI, 게임",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 5:16:18"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

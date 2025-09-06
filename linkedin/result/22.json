@@ -1,0 +1,56 @@
+{
+  "user_id": 22,
+  "original_slack_id": "U09DCNZV77W",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/%EC%84%B1%EC%9A%A9-%EC%86%A1-750a21374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "job_field": "자유전공학부",
+    "interests": "창업, iOS, AI agent",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 10:30:17"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/%EC%84%B1%EC%9A%A9-%EC%86%A1-750a21374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "name": "송성용",
+    "headline": "인하대학교 학생",
+    "location": "IGRUS",
+    "about": "회의/약속시간? 모여라에서 쉽게 조율하세요!\n\n안녕하세요! 회의를 잡거나, 지인분들과의 약속을 위해 여러 명의 일정을 맞추려다 어려움을 겪으신 적 없으신가요?\n\n이런 문제를 해결하기 위해 모여라(moyera) 서비스를 개발했습니다!이제는 링크 한 번 공유로, 여러 사람의 가능/불가능 시간을 손쉽게 모아 최적의 만남 시간을 추천받을 수 있습니다 \n\n바로 사용하기:\n\n\n모여라란?시간 선택 그리드, 히트맵, Google 캘린더 연동으로 모임 시간을 빠르게 확정하는 웹 서비스입니다.\n\n주요 기능\n세션 생성·공유 – 랜덤 shareId로 생성된 링크를 공유하면 누구나 바로 참여\n시간 선택 그리드 (9–23시) – 드래그/탭으로 ‘가능/불가능’ 표시\n무계정 참여 – 이름만 입력하고 바로 참여, 실시간 동기화 지원\n결과 히트맵 – 시간대별 가능 인원을 시각화(0명 → 연한색, 많을수록 진한 초록)\n추천 시간 자동 도출 – 연속 2시간 이상 가능한 구간 중 최대 인원 TOP 10 제공\nGoogle 캘린더 읽기 연동(선택) – 내 일정을 불러와 자동으로 ‘불가능’ 처리\n이벤트 스팬 표시 – 연속/종일 이벤트는 블록 단위로 표시, 일정명은 한 칸만 노출\n링크 공유 – 한 번 클릭으로 바로 공유\n\n\n현재 구글의 심사를 받는중이라 구글 캘린더 연동 시 Google에서 확인하지 않은 앱이고 민감한 정보에 대한 액세스를 요청한다고 뜨지만 아래에 고급탭을 눌러 사용하실 수 있습니다.\nWhen2meet과 같은 비슷한 서비스가 이미 존재하지만 그보다 UI/UX를 개선하려고 노력하였고 무엇보다 캘린더 연동기능으로 더욱 편하다고 생각합니다. 사용중 불편한점 발생시으로 연락주시면 감사하겠습니다.",
+    "experiences": [],
+    "education": [
+      {
+        "school": "인하대학교",
+        "degree": "자유전공학부 학부",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "인하대학교",
+        "degree": "자유전공학부 학부",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "운영진",
+      "인하대학교",
+      "AI-POT 2급",
+      "Google",
+      "Apple",
+      "Hyeonseung Oh님",
+      "신준혁님",
+      "윤여준님",
+      "김의진님",
+      "전민혜님",
+      "Fatimə Tanırverdiyeva님",
+      "Zaur Asgarli님",
+      "Kamran Alizada님",
+      "Toğrul Abdulla님",
+      "Shamil Mammadov님",
+      "CJ ENM ENTERTAINMENT DIV.",
+      "LINE Plus Corp"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

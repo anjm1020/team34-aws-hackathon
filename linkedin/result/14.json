@@ -1,0 +1,23 @@
+{
+  "user_id": 14,
+  "original_slack_id": "U09DJF6MCJX",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "병원 AI 연구원",
+    "interests": "바이브 코딩, 의료 AI",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 3:28:19"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

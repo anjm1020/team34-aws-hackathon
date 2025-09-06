@@ -1,0 +1,23 @@
+{
+  "user_id": 6,
+  "original_slack_id": "U09DFKY0GAE",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/feed/",
+    "job_field": "it",
+    "interests": "AI, react",
+    "hobbies": "헬스",
+    "timestamp": "2025년 9월 5일 오후 2:30:51"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

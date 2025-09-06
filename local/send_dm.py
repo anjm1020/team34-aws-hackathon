@@ -56,7 +56,18 @@ def main():
 def send_dm(user_id, content):
     """특정 사용자에게 DM 전송 테스트"""
     try:
-        response = client.chat_postMessage(channel=user_id, text=content)
+        response = client.chat_postMessage(
+            channel=user_id,
+            text=content,
+            blocks=[
+                {"type": "section", "text": {"type": "mrkdwn", "text": content}},
+                {
+                    "type": "image",
+                    "image_url": "https://qhack-team23-image.s3.us-east-1.amazonaws.com/IMG_0462.jpg",
+                    "alt_text": "장소",
+                },
+            ],
+        )
         print(f"✅ DM 전송 성공! 메시지 ID: {response['ts']}")
     except Exception as e:
         print(f"❌ DM 전송 실패: {e}")

@@ -71,28 +71,22 @@ def get_members_without_meeting():
             port=os.environ.get("DB_PORT", 5432)
         )
         cursor = conn.cursor()
-        
-        cursor.execute("SELECT id, data FROM member WHERE has_meeting = false")
+
+        cursor.execute("SELECT id, data FROM member2 WHERE has_meeting = false")
         members = cursor.fetchall()
-        
+
         conn.close()
         return members
     except Exception as e:
         print(f"❌ DB 연결 실패: {e}")
         # 테스트용 가상 데이터 반환
-        return [
-            ('U09E8FX7GAC', '김민석'),
-            ('U09CU4ZJ9NH', '정재민_AWS_SA'),
-            ('U09CUB0BU95', '곽혜정_QQQ'),
-            ('U09CUBD6VPZ', '최정은_QQQ')
-        ]
 
 def generate_meeting_pairs(max_pairs):
     """다른 팀 멤버끼리 미팅 페어 생성 (최대 5개 페어)"""
     members = get_members_without_meeting()
     pairs = []
     used = set()
-    
+
     for i in range(len(members)):
         if len(pairs) >= max_pairs:  # 5개 페어 제한
             break
@@ -106,14 +100,15 @@ def generate_meeting_pairs(max_pairs):
                 used.add(members[i][0])
                 used.add(members[j][0])
                 break
-    
+
     remaining = [member for member in members if member[0] not in used]
     if remaining:
         print(f"남은 멤버: {len(remaining)}명")
-    
+
     return pairs
 
-def create_meetings(pairs):
+
+def create_meetings(pairs, time):
     """미팅 페어를 meeting 테이블에 저장 (장소 겹치지 않게)"""
     import random
 
@@ -151,7 +146,7 @@ def create_meetings(pairs):
             # meeting 테이블에 삽입
             cursor.execute(
                 "INSERT INTO meeting (member_meeting_id1, member_meeting_id2, accept, time, place) VALUES (%s, %s, %s, %s, %s)",
-                (member_meeting_id1, member_meeting_id2, False, None, place),
+                (member_meeting_id1, member_meeting_id2, False, time, place),
             )
 
             meeting_data.append(
@@ -160,10 +155,9 @@ def create_meetings(pairs):
                     "member_meeting_id1": member_meeting_id1,
                     "member_meeting_id2": member_meeting_id2,
                     "place": place,
+                    "time": time,
                 }
             )
-
-            print(f"   페어 {i+1}: {pair[0][1]} ↔ {pair[1][1]} (장소: {place})")
 
         conn.commit()
         conn.close()
@@ -186,6 +180,7 @@ def create_meetings(pairs):
             )
             print(f"   페어 {i+1}: {pair[0][1]} ↔ {pair[1][1]} (장소: {place})")
         return meeting_data
+
 
 def send_dm(user_id, content):
     """특정 사용자에게 DM 전송"""
@@ -214,26 +209,26 @@ def main():
 
     # 3. 데이터베이스에 저장
     print("\n3️⃣ 데이터베이스에 저장 중...")
-    meeting_data = create_meetings(pairs)
+    meeting_data = create_meetings(pairs, "11:45")
     print("✅ 미팅 정보 저장 완료")
 
     # 4. 테스트 DM 전송 (나에게만)
     print("\n4️⃣ DM 전송 중...")
 
     def makeMessage(time, memberId, memberMeetingId):
-        return f"🤖 네트워킹 매칭 요청이 도착했어요!\n\n:alarm_clock: *미팅시간*: {time}\n\n📋 미팅 수락 버튼을 눌러주세요\n <http://54.147.58.149:5000/api?memberId={memberId}&meetingId={memberMeetingId}%7C수락하기>"
+        return f"🤖 네트워킹 매칭 요청이 도착했어요!\n\n:alarm_clock: *미팅시간*: {time}\n\n📋 미팅 수락 버튼을 눌러주세요\n <http://54.147.58.149:5000/api?memberId={memberId}&meetingId={memberMeetingId}|수락하기>"
 
     for meeting in meeting_data:
         pair = meeting["pair"]
         # 첫 번째 멤버에게 DM 전송
         message1 = makeMessage(
-            "2023-12-01 12:00", pair[0][0], meeting["member_meeting_id1"]
+            meeting["time"], pair[0][0], meeting["member_meeting_id1"]
         )
         send_dm(pair[0][0], message1)
 
         # 두 번째 멤버에게 DM 전송
         message2 = makeMessage(
-            "2023-12-01 12:00", pair[1][0], meeting["member_meeting_id2"]
+            meeting["time"], pair[1][0], meeting["member_meeting_id2"]
         )
         send_dm(pair[1][0], message2)
 

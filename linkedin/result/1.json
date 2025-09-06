@@ -1,0 +1,23 @@
+{
+  "user_id": 1,
+  "original_slack_id": "U09CU4ZJ9NH",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "컴공",
+    "interests": "GenAI",
+    "hobbies": "러닝",
+    "timestamp": "2025년 9월 5일 오후 1:41:01"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

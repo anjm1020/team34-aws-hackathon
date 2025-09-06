@@ -1,0 +1,23 @@
+{
+  "user_id": 20,
+  "original_slack_id": "U09DCS5HGG4",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "게임IT",
+    "interests": "자동화",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 6:25:33"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

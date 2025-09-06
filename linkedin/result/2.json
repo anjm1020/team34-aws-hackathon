@@ -1,0 +1,41 @@
+{
+  "user_id": 2,
+  "original_slack_id": "U09CUEQHSA3",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/%EC%84%B1%EB%AA%A8-%EC%A0%95-a1b280207/",
+    "job_field": "Cloud MSP 사업",
+    "interests": "frontend, AI agent",
+    "hobbies": "클라이밍",
+    "timestamp": "2025년 9월 5일 오후 2:24:04"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/%EC%84%B1%EB%AA%A8-%EC%A0%95-a1b280207",
+    "name": "정성모",
+    "headline": "Frontend-developer",
+    "location": "MEGAZONECLOUD",
+    "about": "프론트엔드 전반적인 작업을 좋아하는 개발자입니다. 기능에대한 구현부터 개발자환경까지 모든 영역에서 불편함을 개선합니다.\n활발한 커뮤니케이션을 통해 팀과 비즈니스 목표에 부합하는 방향의 진행을 목표합니다.\n최근 신규 프로젝트에서는 전반적인 매니징과 프론트 파트에서 방향성을 제시합니다.",
+    "experiences": [],
+    "education": [
+      {
+        "school": "남서울대학교",
+        "degree": "컴퓨터소프트웨어학과 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "남서울대학교",
+        "degree": "컴퓨터소프트웨어학과 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "Git",
+      "Front-end 개발"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

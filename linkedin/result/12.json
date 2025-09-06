@@ -1,0 +1,23 @@
+{
+  "user_id": 12,
+  "original_slack_id": "U09DD4PAU20",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "물리학과",
+    "interests": "네트워크 프로그래밍",
+    "hobbies": "운동",
+    "timestamp": "2025년 9월 5일 오후 3:14:52"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

@@ -47,11 +47,6 @@ def main():
                 name = real_name.split("_")[0]
             print(f"{team_name} (@{name}) - ID: {user['id']}")
 
-    target = "U09DCP3CU92"
-    for user in users["members"]:
-        if user["id"] == target:
-            print(user["real_name"])
-
 
 def send_dm(user_id, content):
     """특정 사용자에게 DM 전송 테스트"""
@@ -74,4 +69,4 @@ def send_dm(user_id, content):
 
 
 if __name__ == "__main__":
-    send_dm("U09DCP3CU92", "hello ${i}")
+    main()

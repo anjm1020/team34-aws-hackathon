@@ -1,0 +1,23 @@
+{
+  "user_id": 23,
+  "original_slack_id": "U09DCQAF7BN",
+  "survey_data": {
+    "linkedin_url": "계정이 잠겼어요..",
+    "job_field": "인공지능공학과 학생",
+    "interests": "창업, Flask(be),AI",
+    "hobbies": "LLM, 야구 ㅎㅎ",
+    "timestamp": "2025년 9월 5일 오후 10:30:47"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

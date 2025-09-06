@@ -1,0 +1,55 @@
+{
+  "user_id": 11,
+  "original_slack_id": "U09D6AU1EQ5",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/sae-jin-kim/",
+    "job_field": "IT 관련 대학생 (컴퓨터소프트웨어전공)",
+    "interests": "백엔드, 인프라 등",
+    "hobbies": "개발이 취미입니다..",
+    "timestamp": "2025년 9월 5일 오후 3:03:52"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/sae-jin-kim",
+    "name": "SAE JIN KIM",
+    "headline": "Server / IT Infrastructure / Back-End Engineer | Student",
+    "location": "Woosong University",
+    "about": "Student, still studying, and study will never end.\nPresident of the WebWizard club in University from 2025.\n\nDeveloped web services, and kept infrastructures while in school\n\nHave been managed (and used) these Enterprise Services:\n- CloudFlare Enterprise\n- Google Workspace Enterprise\n- Microsoft 365 Enterprise\n\nHave did these projects\n- COVID-19 Remaining Vaccine macro\n- Fediverse(Mastodon, Misskey) server build and management\n- VPN(Virtual Private Network) server admin\n- President impeachment petition tracker website with API support",
+    "experiences": [],
+    "education": [
+      {
+        "school": "Woosong University",
+        "degree": "Computer Software Undergraduate",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "Woosong University",
+        "degree": "Railway Software Undergraduate",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "Woosong University",
+        "degree": "Computer Software Undergraduate",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "Woosong University",
+        "degree": "Railway Software Undergraduate",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "아마존 웹 서비스(AWS)",
+      "Github"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

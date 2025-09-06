@@ -1,0 +1,41 @@
+{
+  "user_id": 25,
+  "original_slack_id": "U09DFKY0GAE",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/%EC%84%B1%EB%8F%99-%EC%A1%B0-a2b59b219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "job_field": "It",
+    "interests": "AI",
+    "hobbies": "주식 투자",
+    "timestamp": "2025년 9월 5일 오후 11:29:08"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/%EC%84%B1%EB%8F%99-%EC%A1%B0-a2b59b219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "name": "조성동",
+    "headline": "Platform Engineer at Hyundai Autoever",
+    "location": "현대오토에버",
+    "about": "Resume : https://url.kr/5s7red",
+    "experiences": [],
+    "education": [
+      {
+        "school": "숭실대학교",
+        "degree": "IT학과 글로벌미디어학부 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "숭실대학교",
+        "degree": "IT학과 글로벌미디어학부 학사",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "CSS",
+      "HTML"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

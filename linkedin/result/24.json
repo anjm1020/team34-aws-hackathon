@@ -1,0 +1,48 @@
+{
+  "user_id": 24,
+  "original_slack_id": "U09D9MYK3QE",
+  "survey_data": {
+    "linkedin_url": "https://www.linkedin.com/in/bohyunchoi",
+    "job_field": "IT 교육 스타트업",
+    "interests": "클라우드 및 데브옵스",
+    "hobbies": "애니메이션 ^^,,",
+    "timestamp": "2025년 9월 5일 오후 10:39:18"
+  },
+  "linkedin_data": {
+    "url": "https://www.linkedin.com/in/bohyunchoi",
+    "name": "Bohyun Choi",
+    "headline": "Facilitator at @NAEIL | ex-AWS Intern",
+    "location": "NAEIL",
+    "about": "👋 Hi, I’m Brilly!\n🏫 I'm majoring in Digital Media(Design & Programming)\n👀 I’m interested in server and infra, especially cloud!\n🌫️ I study Kubernetes and AWS services intensively!\n🗣️ I'm very outgoing and love presenting my experiences or knowledge!\n🌉 I'm the bridge that connects people.",
+    "experiences": [],
+    "education": [
+      {
+        "school": "서울여자대학교",
+        "degree": "Digital Media Bachelor of Engineering - BE",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "한양여자대학교",
+        "degree": "Tourism Associate's degree",
+        "field": null,
+        "date_range": null,
+        "description": null
+      },
+      {
+        "school": "서울여자대학교",
+        "degree": "Digital Media Bachelor of Engineering - BE",
+        "field": null,
+        "date_range": null,
+        "description": null
+      }
+    ],
+    "skills": [
+      "프로젝트기획",
+      "소프트웨어 프로젝트 관리"
+    ],
+    "websites": [],
+    "email": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "user_id": 21,
+  "original_slack_id": "U09DD5RM0AH",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "통계학과, 디지털광고",
+    "interests": "강화학습",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 9:17:45"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

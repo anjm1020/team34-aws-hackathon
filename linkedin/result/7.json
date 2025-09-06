@@ -1,0 +1,23 @@
+{
+  "user_id": 7,
+  "original_slack_id": "U09DCP6JU5A",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "마케팅과 브랜딩하고 있습니다. 소비자학과 전공하고 있습니다.",
+    "interests": "디자인, 비주얼, Gen AI, 등 다양한 분야 공부하고 있습니다.",
+    "hobbies": "",
+    "timestamp": "2025년 9월 5일 오후 2:32:48"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

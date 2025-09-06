@@ -113,7 +113,7 @@ def create_meetings(pairs, time):
     import random
 
     # 1~5 장소를 섞어서 순차 배정
-    places = list(range(1, 6))  # [1, 2, 3, 4, 5]
+    places = list(range(1, 4))  # [1, 2, 3, 4, 5]
     random.shuffle(places)
     meeting_data = []
 
@@ -204,19 +204,19 @@ def main():
 
     # 2. 미팅 페어 생성
     print("\n2️⃣ 미팅 페어 생성 중...")
-    pairs = generate_meeting_pairs(5)
+    pairs = generate_meeting_pairs(3)
     print(f"✅ {len(pairs)}개의 미팅 페어 생성 완료 (최대 5개 제한)")
 
     # 3. 데이터베이스에 저장
     print("\n3️⃣ 데이터베이스에 저장 중...")
-    meeting_data = create_meetings(pairs, "11:45")
+    meeting_data = create_meetings(pairs, "16:00")
     print("✅ 미팅 정보 저장 완료")
 
     # 4. 테스트 DM 전송 (나에게만)
     print("\n4️⃣ DM 전송 중...")
 
     def makeMessage(time, memberId, memberMeetingId):
-        return f"🤖 네트워킹 매칭 요청이 도착했어요!\n\n:alarm_clock: *미팅시간*: {time}\n\n📋 미팅 수락 버튼을 눌러주세요\n <http://54.147.58.149:5000/api?memberId={memberId}&meetingId={memberMeetingId}|수락하기>"
+        return f"🤖 네트워킹 매칭 요청이 도착했어요!\n\n:alarm_clock: *미팅시간*: {time}\n\n📋 미팅 수락 버튼을 눌러주세요(유효시간 ~15:55)\n <http://54.147.58.149:5000/api?memberId={memberId}&meetingId={memberMeetingId}|수락하기>"
 
     for meeting in meeting_data:
         pair = meeting["pair"]

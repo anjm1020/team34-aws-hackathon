@@ -1,0 +1,23 @@
+{
+  "user_id": 13,
+  "original_slack_id": "U09D8P2ERGS",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "컴퓨터 공학과 및 마케팅",
+    "interests": "Gen AI, Performace Marketing",
+    "hobbies": "음악듣기, 심리학",
+    "timestamp": "2025년 9월 5일 오후 3:22:00"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

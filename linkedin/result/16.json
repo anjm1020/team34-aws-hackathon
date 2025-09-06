@@ -1,0 +1,23 @@
+{
+  "user_id": 16,
+  "original_slack_id": "U09DCNYA3B6",
+  "survey_data": {
+    "linkedin_url": "",
+    "job_field": "무직(FE), 컴퓨터과학과",
+    "interests": "Frontend, Cloude, AI",
+    "hobbies": "공부",
+    "timestamp": "2025년 9월 5일 오후 3:45:21"
+  },
+  "linkedin_data": {
+    "url": "",
+    "name": "",
+    "headline": "",
+    "location": "",
+    "about": "",
+    "experiences": [],
+    "education": [],
+    "skills": [],
+    "websites": [],
+    "email": null
+  }
+}

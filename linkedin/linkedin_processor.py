@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import os
-import sys
 import subprocess
-import argparse
+import sys
 from pathlib import Path
 
 sys.path.append('linkedin-scraper-mcp')
-from postgres_config import PostgreSQLClient
 from excel_to_json import excel_to_json
+from postgres_config import PostgreSQLClient
+
 
 def is_valid_linkedin_url(url):
     """유효한 LinkedIn URL인지 확인"""
     if not url or url.strip() == "":
         return False
-    return "linkedin.com/in/" in url and "feed" not in ur
+    return "linkedin.com/in/" in url and "feed" not in url
 
 def normalize_url(url):
     """URL 정규화"""

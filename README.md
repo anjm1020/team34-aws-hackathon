@@ -71,7 +71,7 @@ Amazon Q Developer로 구현한 어플리케이션의 데모 영상을 입력합
 
 - RDS : postgresql (네트워킹 정보 저장용)
 - EC2 : flask (네트워킹 매칭 수신 웹훅용)
-- 
+- Bedrock(claude-3.5v2)
 
 ## 프로젝트 기대 효과 및 예상 사용 사례
 

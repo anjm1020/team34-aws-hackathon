@@ -951,7 +951,7 @@
       "id": "U09D5NWEZC3",
       "name": "link.ahn",
       "is_bot": false,
-      "updated": 1757127255,
+      "updated": 1757139893,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -990,8 +990,9 @@
         "status_emoji": "",
         "status_emoji_display_info": [],
         "status_expiration": 0,
-        "huddle_state": "default_unset",
-        "huddle_state_expiration_ts": 0
+        "huddle_state": "in_a_huddle",
+        "huddle_state_expiration_ts": 1757141213,
+        "huddle_state_call_id": "R09DE4D0RU7"
       }
     },
     {
@@ -1325,7 +1326,7 @@
       "id": "U09D6LTK1UM",
       "name": "gun",
       "is_bot": false,
-      "updated": 1757131093,
+      "updated": 1757140080,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -1368,7 +1369,7 @@
         "status_emoji_display_info": [],
         "status_expiration": 0,
         "huddle_state": "in_a_huddle",
-        "huddle_state_expiration_ts": 1757132413,
+        "huddle_state_expiration_ts": 1757141400,
         "huddle_state_call_id": "R09DE4D0RU7"
       }
     },
@@ -3172,7 +3173,7 @@
       "id": "U09D9T8S230",
       "name": "dlrjsgh94",
       "is_bot": false,
-      "updated": 1757130260,
+      "updated": 1757139406,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -3211,9 +3212,8 @@
         "status_emoji": "",
         "status_emoji_display_info": [],
         "status_expiration": 0,
-        "huddle_state": "in_a_huddle",
-        "huddle_state_expiration_ts": 1757131580,
-        "huddle_state_call_id": "R09DE4D0RU7"
+        "huddle_state": "default_unset",
+        "huddle_state_expiration_ts": 0
       }
     },
     {
@@ -3560,7 +3560,7 @@
       "id": "U09DBBPRQNA",
       "name": "howard",
       "is_bot": false,
-      "updated": 1757131118,
+      "updated": 1757140016,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -3603,7 +3603,7 @@
         "status_emoji_display_info": [],
         "status_expiration": 0,
         "huddle_state": "in_a_huddle",
-        "huddle_state_expiration_ts": 1757132438,
+        "huddle_state_expiration_ts": 1757141336,
         "huddle_state_call_id": "R09DE4D0RU7"
       }
     },
@@ -4130,7 +4130,7 @@
       "id": "U09DD40BYVA",
       "name": "joy",
       "is_bot": false,
-      "updated": 1757130336,
+      "updated": 1757137161,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -4172,9 +4172,8 @@
         "status_emoji": "",
         "status_emoji_display_info": [],
         "status_expiration": 0,
-        "huddle_state": "in_a_huddle",
-        "huddle_state_expiration_ts": 1757131656,
-        "huddle_state_call_id": "R09DE4D0RU7"
+        "huddle_state": "default_unset",
+        "huddle_state_expiration_ts": 0
       }
     },
     {
@@ -4757,7 +4756,7 @@
       "id": "U09DFLXR9PC",
       "name": "joho0504",
       "is_bot": false,
-      "updated": 1757130851,
+      "updated": 1757139347,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -4800,7 +4799,7 @@
         "status_emoji_display_info": [],
         "status_expiration": 0,
         "huddle_state": "default_unset",
-        "huddle_state_expiration_ts": 1757132171
+        "huddle_state_expiration_ts": 1757140667
       }
     },
     {
@@ -7264,7 +7263,7 @@
       "id": "U09E42RQ55X",
       "name": "wf_bot_a09dqpuss4e",
       "is_bot": true,
-      "updated": 1757082875,
+      "updated": 1757134900,
       "is_app_user": false,
       "team_id": "T09CU4ZHZAR",
       "deleted": false,
@@ -7284,17 +7283,17 @@
       "profile": {
         "real_name": "Q Developer Hackathon 네트워킹 설문",
         "display_name": "",
-        "avatar_hash": "ed4d9764ae72",
+        "avatar_hash": "5c69a91f66cf",
         "real_name_normalized": "Q Developer Hackathon 네트워킹 설문",
         "display_name_normalized": "",
-        "image_24": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_24.png",
-        "image_32": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_32.png",
-        "image_48": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_48.png",
-        "image_72": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_72.png",
-        "image_192": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_192.png",
-        "image_512": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_512.png",
-        "image_1024": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_1024.png",
-        "image_original": "https://avatars.slack-edge.com/2025-09-05/9465225185205_ed4d9764ae72669b765a_original.png",
+        "image_24": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_24.png",
+        "image_32": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_32.png",
+        "image_48": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_48.png",
+        "image_72": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_72.png",
+        "image_192": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_192.png",
+        "image_512": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_512.png",
+        "image_1024": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_1024.png",
+        "image_original": "https://avatars.slack-edge.com/2025-09-05/9485370269073_5c69a91f66cf92c7c99b_original.png",
         "is_custom_image": true,
         "first_name": "Q",
         "last_name": "Developer Hackathon 네트워킹 설문",
@@ -8388,7 +8387,7 @@
       }
     }
   ],
-  "cache_ts": 1757131299,
+  "cache_ts": 1757140490,
   "response_metadata": {
     "next_cursor": ""
   }

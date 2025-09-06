@@ -10,8 +10,8 @@ def excel_to_json(excel_file_path, output_dir="converted_json"):
     # 출력 디렉토리 생성
     Path(output_dir).mkdir(exist_ok=True)
     
-    # 엑셀 파일 읽기
-    df = pd.read_excel(excel_file_path)
+    # 엑셀 파일 읽기 (header=0으로 첫 번째 행을 헤더로 사용)
+    df = pd.read_excel(excel_file_path, header=0)
     
     # 파일명에서 확장자 제거
     base_name = Path(excel_file_path).stem
@@ -19,13 +19,9 @@ def excel_to_json(excel_file_path, output_dir="converted_json"):
     # JSON 파일 경로
     json_file_path = f"{output_dir}/{base_name}.json"
     
-    # 첫 번째 행을 헤더로 사용
-    headers = df.iloc[0].tolist()
-    data_rows = df.iloc[1:]
-    
     # 데이터 정리 및 구조화
     json_data = []
-    for _, row in data_rows.iterrows():
+    for _, row in df.iterrows():
         record = {
             "linkedin_url": str(row.iloc[0]).strip() if pd.notna(row.iloc[0]) else "",
             "job_field": str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else "",

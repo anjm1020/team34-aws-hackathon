@@ -3,6 +3,10 @@ import os
 import sys
 import subprocess
 from pathlib import Path
+from dotenv import load_dotenv
+
+# .env 파일 로드
+load_dotenv()
 
 sys.path.append('linkedin-scraper-mcp')
 from postgres_config import PostgreSQLClient
@@ -87,16 +91,21 @@ def create_member_json(member_data, user_id, linkedin_data=None):
     }
 
 def upload_to_db(json_file_path):
-    """DB에 업로드"""
+    """DB에 업로드 (ice_breaking 포함)"""
     with open(json_file_path, 'r', encoding='utf-8') as f:
         member_data = json.load(f)
+    
+    # ice_breaking 데이터가 있으면 포함
+    if "ice_breaking" in member_data:
+        print(f"🧊 ice_breaking 데이터 포함하여 업로드")
     
     db_client = PostgreSQLClient()
     if not db_client.connect():
         return False
     
     try:
-        result = db_client.insert_profile_with_user_id(member_data)
+        slack_id = member_data.get("original_slack_id", "")
+        result = db_client.insert_profile_with_slack_id(slack_id, member_data)
         return result is not None
     except Exception as e:
         print(f"❌ DB 업로드 실패: {e}")
@@ -149,12 +158,8 @@ def process_members(survey_json_path):
         
         print(f"💾 저장 완료: {result_file}")
         
-        # 5. DB 업로드 (현재 비활성화)
-        # if upload_to_db(result_file):
-        #     print(f"✅ DB 업로드 성공: User {user_id}")
-        # else:
-        #     print(f"❌ DB 업로드 실패: User {user_id}")
-        print(f"📝 JSON 생성 완료: User {user_id}")
+        # 5. JSON 생성 완료
+        print(f"📋 JSON 생성 완료: User {user_id}")
     
     print(f"\n🎉 전체 처리 완료! {len(survey_data)}명")
 

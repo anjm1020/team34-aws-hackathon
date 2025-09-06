@@ -66,6 +66,8 @@ NetWaling은 자연스러운 오프라인 소통을 목표로, 참가자들의 �
 
 Amazon Q Developer로 구현한 어플리케이션의 데모 영상을 입력합니다.
 **Git의 Readme에는 GIF 형식으로 업로드하며, 원본 동영상은 발표 Presentation에 제출합니다.**
+### linkedin 크롤링 gif
+
 
 ## 리소스 배포하기
 
